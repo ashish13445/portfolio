@@ -5,9 +5,19 @@
 
 .row-content {
     margin:0px auto;
-    padding: 50px 0px 50px 0px;
+    padding: 20px 0px 20px 0px;
     border-bottom: 1px ridge;
-    min-height:400px;
+    
+}
+
+main {
+    min-height: 100vh;
+    align-items: center;
+    border-bottom: 3px ridge;
+}
+
+.skills {
+    border-bottom: 3px ridge;
 }
 
 .footer {
@@ -20,9 +30,143 @@
     margin: 0px auto;
     background: #9575CD;
     color: floralwhite;
+    
 }
 
 address {
     font-size: 80%;
     margin: 0px ;
+}
+
+
+.icon {
+    border-radius: 100%;
+}
+
+img:hover {
+    animation: shake 0.5s ;
+    animation-iteration-count: 5000ms;
+}
+
+.progress .val {
+float: right;
+}
+
+.first {
+    width: 0;
+    animation: progress-one 2.5s ease-in-out forwards;
+
+}
+
+.second {
+    width: 0;
+    animation: progress-two 2.5s ease-in-out forwards;
+
+}
+
+.third {
+    width: 0;
+    animation: progress-three 2.5s ease-in-out forwards;
+
+}
+
+.fourth {
+    width: 0;
+    animation: progress-four 2.5s ease-in-out forwards;
+
+}
+
+.fifth {
+    width: 0;
+    animation: progress-five 2.5s ease-in-out forwards;
+
+}
+
+.sixth {
+    width: 0;
+    animation: progress-six 2.5s ease-in-out forwards;
+
+}
+
+
+
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  @keyframes progress-one {
+      from {
+          width: 0;
+
+      }
+      to {
+          width: 100%;
+      }
+  }
+
+  @keyframes progress-two {
+    from {
+        width: 0;
+
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes progress-three {
+    from {
+        width: 0;
+
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes progress-four {
+    from {
+        width: 0;
+
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes progress-five {
+    from {
+        width: 0;
+
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes progress-six {
+    from {
+        width: 0;
+
+    }
+    to {
+        width: 40%;
+    }
+}
+
+.skills {
+ width: 100%;
+ height: 10
 }
