@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet"> 
+    
+ <style>
+
+     
+		#main {
+			font-family: sans-serif;
+			
+		}
+        
+        header {
+        	text-align: center;
+        	font-family: Fondamento;
+
+        }
+		
+		#form-div {
+			
+			
+
+			margin: 20px 100px 100px 100px;
+			padding: 20px;
+
+
+
+			
+			
+		}
+		#survey-form {
+			margin: 20px;
+		}
+        #comment {
+        	height: 100px;
+        	width: 60%;
+        }
+        section {
+        	margin: 20px;
+        }
+        input {
+        	width: 100%;
+
+        }
+        button {
+        	width: 200px;
+        	height: 50px;
+        	background-color: rgb(50, 201, 136);
+        	border-radius: 10%;
+        }
+        button:hover {
+        	width: 225px;
+        	height: 70px;
+        	border-radius: 10%;
+        }
+
+
+
+
+
+
+	
+ </style>
+
+
+
+
+</head>
+<body>
+<div id = "main">
+
+
+<header>
+	<h1 id="title">SURVEY FORM </h1>
+    <p id= "description"><i>Thankyou for taking the time to help us improve our platform</i></p>
+</header>
+
+<br>
+<div id = "form-div">
+	<form  action="file:///home/abhi/Desktop/survey_form.html" method="POST" id="survey-form" >
+<section><label for="name-label" id="name-label">NAME :</label> <br>
+		<input type="text" name="Name" maxlength="50" value="" placeholder="name" id="name" required>
+        <br>
+</section>
+
+<section><label for= "email-label" id="email-label">E-MAIL :</label><br>
+		<input type="email" name="E-MAIL" maxlength="50" value="" placeholder="e-mail" id="email" min=1 max=125 required>
+        <br>
+</section>
+
+<section><label for= "number-label" id="number-label" >AGE :</label><br>
+		<input type="number" name="age" value="" id= "number" placeholder="number" min=1 max= 125 required>
+        <br>
+</section>        
+
+<section>WHICH OPTION BEST DESCRIBES YOUR CURRENT ROLE :<br>
+        <select name="roles" id="dropdown">
+        	<option>student</option>
+        	<option>full-time job</option>
+        	<option>full-time learner</option>
+        	<option>prefer not to say</option>
+        	<option>other</option>
+        </select>
+        <br>
+</section>  
+<section>
+	<label for="recommendation">How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <fieldset id="recommendation">
+          <label for="r_definitely"><input type="radio" name="recommend" id="r_definitely" value="definitely" required>Definitely</label>
+          <label for="r_maybe"><input type="radio" name="recommend" id="r_maybe" value="maybe" required>Maybe</label>
+          <label for="r_not_sure"><input type="radio" name="recommend" id="r_not_sure" value="notsure" required>Not sure</label>
+        </fieldset>
+</section>      
+
+<section>WHICH IS YOUR FAVOURITE FEATURE ON FREECODECAMP:<br>
+        <select name="features">
+        	<option>challenges</option>
+        	<option>projects</option>
+        	<option>community</option>
+        	<option>open-source</option>
+        </select>
+</section><br>
+<section>WHAT WOULD YOU LIKE TO CHANGE: <br>
+<fieldset id="improvements">
+          <legend>(<em>Check all that apply</em>)</legend>
+          <label for="c-fep"><input type="checkbox" name="improve-checks" id="c-fep" value="fep">Front-end Projects</label>
+          <label for="c-bep"><input type="checkbox" name="improve-checks" id="c-bep" value="bep">Back-end Projects</label>
+          <label for="c-datav"><input type="checkbox" name="improve-checks" id="c-datav" value="datav">Data Visualization</label>
+          <label for="c-chlgs"><input type="checkbox" name="improve-checks" id="c-chlgs" value="chlgs">Challenges</label>
+          <label for="c-osc"><input type="checkbox" name="improve-checks" id="c-osc" value="osc">Open Source Community</label>
+          <label for="c-ghr"><input type="checkbox" name="improve-checks" id="c-ghr" value="ghr">Gitter help rooms</label>
+          <label for="c-vid"><input type="checkbox" name="improve-checks" id="c-vid" value="vid">Videos</label>
+          <label for="c-meet"><input type="checkbox" name="improve-checks" id="c-meet" value="meet">City Meetups</label>
+          <label for="c-wiki"><input type="checkbox" name="improve-checks" id="c-wiki" value="wiki">Wiki</label>
+          <label for="c-forum"><input type="checkbox" name="improve-checks" id="c-forum" value="forum">
+Forum</label>
+          <label for="c-addcours"><input type="checkbox" name="improve-checks" id="c-addcours" value="addcours">Additional Courses</label>
+        </fieldset>
+</section>
+        ANY COMMENTS OR SUGGESTIONS :<br>
+        <textarea name="comment" id = "comment" placeholder="any suggestions" ></textarea> <br>
+        <button id="submit">submit</button>
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+		
+	</form>
+
+</div>	
+
+</body>
+</html>
